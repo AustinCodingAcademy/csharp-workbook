@@ -1,5 +1,0 @@
-dependencies:
-  pre:
-    - for file in *.cs; do mcs "$file"; done
-  override:
-    - sudo apt-get install mono-tools

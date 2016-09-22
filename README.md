@@ -16,10 +16,12 @@
 ## Compile and Run a File
 1. Install [Mono](http://www.mono-project.com/download/)
 2. To run the program, you must first compile using `mcs`
+
   ```
   mcs 00Setup.cs
   ```
 3. This will create a `.exe` file. Run it using `mono`
+
   ```
   mono 00Setup.exe
   ```

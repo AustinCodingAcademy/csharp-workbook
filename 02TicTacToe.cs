@@ -12,7 +12,7 @@ public class Program
 
     public static void Main()
     {
-        // Enter code here
+        // Your code here
         DrawBoard();
         GetInput();
 
@@ -25,37 +25,37 @@ public class Program
         int row = Int32.Parse(Console.ReadLine());
         Console.WriteLine("Enter Column:");
         int column = Int32.Parse(Console.ReadLine());
-        // Enter code here
+        // Your code here
         return;
     }
 
     public static void PlaceMark(int row, int column)
     {
-        // Enter code here
+        // Your code here
         return;
     }
 
     public static bool CheckForWin()
     {
-        // Enter code here
+        // Your code here
         return false;
     }
 
     public static bool HorizontalWin()
     {
-        // Enter code here
+        // Your code here
         return false;
     }
 
     public static bool VerticalWin()
     {
-        // Enter code here
+        // Your code here
         return false;
     }
 
     public static bool DiagonalWin()
     {
-        // Enter code here
+        // Your code here
         return false;
     }
 

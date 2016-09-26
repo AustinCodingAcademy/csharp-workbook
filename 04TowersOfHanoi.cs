@@ -16,16 +16,19 @@ public class Program
         // Your code here
     }
     
-    public static bool GameOver() {
+    public static bool GameOver()
+    {
         // Your code here;
         return false;
     }
     
-    public static void movePiece(string start, string finish) {
+    public static void movePiece(string start, string finish)
+    {
         // Your code here
     }
     
-    public static bool isLegal(string start, string finish) {
+    public static bool isLegal(string start, string finish)
+    {
         // Your code here
         return false;
     }

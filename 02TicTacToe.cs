@@ -4,11 +4,11 @@ public class Program
 {
     public static string playerTurn = "X";
     public static string[][] board = new string[][]
-        {
-            new string[] {" ", " ", " "},
-            new string[] {" ", " ", " "},
-            new string[] {" ", " ", " "}
-        };
+    {
+        new string[] {" ", " ", " "},
+        new string[] {" ", " ", " "},
+        new string[] {" ", " ", " "}
+     };
 
     public static void Main()
     {

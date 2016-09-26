@@ -13,6 +13,7 @@ public class Program
     
     public static string CompareHands(string hand1, string hand2)
     {
+        // Your code here
         return hand1 + " " + hand2;
     }
 }

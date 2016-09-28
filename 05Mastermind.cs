@@ -17,9 +17,6 @@ public class Program
     // test solution
     public static char[] solution = new char[] {'a', 'b', 'c', 'd'};
     
-    // randomly generated solution
-    // public static char[] solution = new char[codeSize];
-    
     // game board
     public static string[][] board = new string[allowedAttempts][];
     

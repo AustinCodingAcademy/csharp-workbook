@@ -20,12 +20,6 @@ public class Checker
     {
         // Your code here
     }
-    
-    public void MovePiece(int[] newPosition)
-    {
-        // Your code here
-        
-    }
 }
 
 public class Board

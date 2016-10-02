@@ -86,10 +86,4 @@ class Game
     {
         // Your code here
     }
-    
-    public void Start()
-    {
-        // Your code here
-        return;
-    }
 }

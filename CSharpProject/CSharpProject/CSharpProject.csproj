@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\01Week\HelloWorld.cs">
-      <Link>HelloWorld.cs</Link>
+    <Compile Include="..\..\02Week\PigLatin.cs">
+      <Link>PigLatin.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

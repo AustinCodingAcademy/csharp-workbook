@@ -12,10 +12,13 @@ public class Program
 
     public static void Main()
     {
-        // Your code here
-        DrawBoard();
-        GetInput();
+        do
+        {
+            DrawBoard();
+            GetInput();
+        } while (CheckForWin());
 
+        Console.ReadLine();
     }
 
     public static void GetInput()
@@ -25,38 +28,93 @@ public class Program
         int row = Int32.Parse(Console.ReadLine());
         Console.WriteLine("Enter Column:");
         int column = Int32.Parse(Console.ReadLine());
-        // Your code here
+
+        PlaceMark(row, column);
+
+        CheckForWin(); //return a bool - we need to do something with this value
+
+        playerTurn = playerTurn == "X" ? "O" : "X";
+
         return;
     }
 
     public static void PlaceMark(int row, int column)
     {
-        // Your code here
-        return;
+        board[row][column] = playerTurn;
     }
 
     public static bool CheckForWin()
     {
-        // Your code here
-        return false;
+        bool hasPlayerWon = HorizontalWin() || VerticalWin() || DiagonalWin();
+
+        if (hasPlayerWon)
+        {
+            Console.WriteLine("Player" + playerTurn + "Won!");
+        }
+
+        return hasPlayerWon;
     }
 
     public static bool HorizontalWin()
     {
-        // Your code here
-        return false;
+        bool horizontalWin = false;
+
+        // Top horizontal row
+        if (board[0][0] == playerTurn && board[0][1] == playerTurn && board[0][2] == playerTurn)
+        {
+            horizontalWin = true;
+        }
+
+        if (board[1][0] == playerTurn && board[1][1] == playerTurn && board[1][2] == playerTurn)
+        {
+            horizontalWin = true;
+        }
+
+        if (board[2][0] == playerTurn && board[2][1] == playerTurn && board[2][2] == playerTurn)
+        {
+            horizontalWin = true;
+        }
+
+        return horizontalWin;
     }
 
     public static bool VerticalWin()
     {
-        // Your code here
-        return false;
+        bool verticalWin = false;
+
+        if (board[0][0] == playerTurn && board[1][0] == playerTurn && board[2][0] == playerTurn)
+        {
+            verticalWin = true;
+        }
+
+        if (board[0][1] == playerTurn && board[1][1] == playerTurn && board[2][1] == playerTurn)
+        {
+            verticalWin = true;
+        }
+
+        if (board[0][2] == playerTurn && board[1][2] == playerTurn && board[2][2] == playerTurn)
+        {
+            verticalWin = true;
+        }
+
+        return verticalWin;
     }
 
     public static bool DiagonalWin()
     {
-        // Your code here
-        return false;
+        bool diagonalWin = false;
+
+        if (board[0][0] == playerTurn && board[1][1] == playerTurn && board[2][2] == playerTurn)
+        {
+            diagonalWin = true;
+        }
+
+        if (board[2][0] == playerTurn && board[1][1] == playerTurn && board[0][2] == playerTurn)
+        {
+            diagonalWin = true;
+        }
+
+        return diagonalWin;
     }
 
     public static void DrawBoard()
@@ -67,6 +125,5 @@ public class Program
         Console.WriteLine("1 " + String.Join("|", board[1]));
         Console.WriteLine("  -----");
         Console.WriteLine("2 " + String.Join("|", board[2]));
-        return;
     }
 }

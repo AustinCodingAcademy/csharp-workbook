@@ -12,12 +12,10 @@ public class Program
 
     public static void Main()
     {
-        do
-        {
-            DrawBoard();
-            GetInput();
-        } while (CheckForWin());
+        DrawBoard();
+        GetInput();
 
+        // leave this command at the end so your program does not close automatically
         Console.ReadLine();
     }
 
@@ -28,93 +26,31 @@ public class Program
         int row = Int32.Parse(Console.ReadLine());
         Console.WriteLine("Enter Column:");
         int column = Int32.Parse(Console.ReadLine());
-
-        PlaceMark(row, column);
-
-        CheckForWin(); //return a bool - we need to do something with this value
-
-        playerTurn = playerTurn == "X" ? "O" : "X";
-
-        return;
     }
 
     public static void PlaceMark(int row, int column)
     {
-        board[row][column] = playerTurn;
+       // your code goes here
     }
 
     public static bool CheckForWin()
     {
-        bool hasPlayerWon = HorizontalWin() || VerticalWin() || DiagonalWin();
-
-        if (hasPlayerWon)
-        {
-            Console.WriteLine("Player" + playerTurn + "Won!");
-        }
-
-        return hasPlayerWon;
+        // your code goes here
     }
 
     public static bool HorizontalWin()
     {
-        bool horizontalWin = false;
-
-        // Top horizontal row
-        if (board[0][0] == playerTurn && board[0][1] == playerTurn && board[0][2] == playerTurn)
-        {
-            horizontalWin = true;
-        }
-
-        if (board[1][0] == playerTurn && board[1][1] == playerTurn && board[1][2] == playerTurn)
-        {
-            horizontalWin = true;
-        }
-
-        if (board[2][0] == playerTurn && board[2][1] == playerTurn && board[2][2] == playerTurn)
-        {
-            horizontalWin = true;
-        }
-
-        return horizontalWin;
+       // your code goes here
     }
 
     public static bool VerticalWin()
     {
-        bool verticalWin = false;
-
-        if (board[0][0] == playerTurn && board[1][0] == playerTurn && board[2][0] == playerTurn)
-        {
-            verticalWin = true;
-        }
-
-        if (board[0][1] == playerTurn && board[1][1] == playerTurn && board[2][1] == playerTurn)
-        {
-            verticalWin = true;
-        }
-
-        if (board[0][2] == playerTurn && board[1][2] == playerTurn && board[2][2] == playerTurn)
-        {
-            verticalWin = true;
-        }
-
-        return verticalWin;
+        // your code goes here
     }
 
     public static bool DiagonalWin()
     {
-        bool diagonalWin = false;
-
-        if (board[0][0] == playerTurn && board[1][1] == playerTurn && board[2][2] == playerTurn)
-        {
-            diagonalWin = true;
-        }
-
-        if (board[2][0] == playerTurn && board[1][1] == playerTurn && board[0][2] == playerTurn)
-        {
-            diagonalWin = true;
-        }
-
-        return diagonalWin;
+        // your code goes here
     }
 
     public static void DrawBoard()

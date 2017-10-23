@@ -48,3 +48,6 @@ git push
 ```
 5. Head to your remote repository in [GitHub](http://www.github.com)
 6. Click on `new pull request` button and name it using your name
+
+
+If you are having some trouble with the steps watch this [video here](https://www.youtube.com/embed/pMuEKpaYwec)

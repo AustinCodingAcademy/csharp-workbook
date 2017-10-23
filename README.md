@@ -50,4 +50,4 @@ git push
 6. Click on `new pull request` button and name it using your name
 
 
-If you are having some trouble with the steps watch this [video here](https://www.youtube.com/embed/pMuEKpaYwec)
+If you are having some trouble with the steps watch this [video here](https://www.youtube.com/watch?v=pMuEKpaYwec)

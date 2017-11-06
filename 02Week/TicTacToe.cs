@@ -40,26 +40,36 @@ public class Program
     public static bool CheckForWin()
     {
         // your code goes here
+
+        return false;
     }
 
     public static bool CheckForTie()
     {
         // your code goes here
+
+        return false;
     }
     
     public static bool HorizontalWin()
     {
        // your code goes here
+
+       return false;
     }
 
     public static bool VerticalWin()
     {
         // your code goes here
+
+        return false;
     }
 
     public static bool DiagonalWin()
     {
         // your code goes here
+
+        return false;
     }
 
     public static void DrawBoard()

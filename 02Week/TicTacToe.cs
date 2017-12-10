@@ -27,9 +27,9 @@ public class Program
     {
         Console.WriteLine("Player " + playerTurn);
         Console.WriteLine("Enter Row:");
-        int row = Int32.Parse(Console.ReadLine());
+        int row = int.Parse(Console.ReadLine());
         Console.WriteLine("Enter Column:");
-        int column = Int32.Parse(Console.ReadLine());
+        int column = int.Parse(Console.ReadLine());
     }
 
     public static void PlaceMark(int row, int column)

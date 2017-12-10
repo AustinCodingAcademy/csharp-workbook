@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 public class Program
 {
@@ -16,24 +17,24 @@ public class Program
         // Your code here
     }
     
-    public static bool GameOver()
+    public static bool CheckForWin()
     {
         // Your code here;
         return false;
     }
     
-    public static void movePiece(string start, string finish)
+    public static void MovePiece(string moveFrom, string moveTo)
     {
         // Your code here
     }
     
-    public static bool isLegal(string start, string finish)
+    public static bool IsMoveLegal(string moveFrom, string moveTo)
     {
         // Your code here
         return false;
     }
     
-    public static void printStacks ()
+    public static void PrintStacks ()
     {
         string[] letters = new string[] {"a", "b", "c"};
         for( var i = 0; i < letters.Length; i++ )

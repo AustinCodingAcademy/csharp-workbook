@@ -11,9 +11,8 @@ public class Program
         Console.WriteLine(CompareHands(hand1, hand2));
     }
     
-    public static string CompareHands(string hand1, string hand2)
+    public static void CompareHands(string hand1, string hand2)
     {
         // Your code here
-        return hand1 + " " + hand2;
     }
 }

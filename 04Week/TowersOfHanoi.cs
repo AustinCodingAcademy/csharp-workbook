@@ -14,27 +14,33 @@ public class Program
     public static void Main()
     {
         printStacks();
-        // Your code here
+
+        // your code goes here
+
+        // leave this command at the end so your program does not close automatically
+        Console.ReadLine();
     }
     
     public static bool CheckForWin()
     {
-        // Your code here;
+        // your code goes here
+
         return false;
     }
     
     public static void MovePiece(string moveFrom, string moveTo)
     {
-        // Your code here
+        // your code goes here
     }
     
     public static bool IsMoveLegal(string moveFrom, string moveTo)
     {
-        // Your code here
+        // your code goes here
+
         return false;
     }
     
-    public static void PrintStacks ()
+    public static void PrintStacks()
     {
         string[] letters = new string[] {"a", "b", "c"};
         for( var i = 0; i < letters.Length; i++ )

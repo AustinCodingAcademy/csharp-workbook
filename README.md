@@ -23,30 +23,31 @@ cd git-workbook
 3. From the left menu select `Visual C# -> Windows Classic Desktop` then on the right select `Console App (.NET Framework)`. Set the project name as `CSharpProject`, the location can be anywhere in your computer, just make sure it is **outside your recent cloned repository folder**
 4. Visual Studio will create a initial `Program.cs` file. You can delete it, we wont need it
 5. To add a file to the project, right-click on top of CSharpProject `Add  -> Existing Item...` or use the keyboard shortcut `Shift + Alt + A`
-6. Navigate to the `/git-workbook/01Week/` repository/folder and select the file `HelloWorld.cs`
+6. Navigate to the `/git-workbook/` repository folder and select the week folder and file or the current day
 7. The Add button has a small arrow pointing down. Click on that and select `Add As Link`. If you just add it, it will copy the file and you won't be able to track it in your repository.
 8. Open the file you just added as a link
-9. Change th text inside `Console.WriteLine` method to `"Hello Word"` and save it
-
 
 ## Create a Pull Request
-1. Get back on Git Bash and check the status of your repository - You should see the file HelloWorld.cs appear in red
+
+This steps setup needs to be done only once. For future projects all you need to do is push you changes to the branch.
+
+1. Get back on Git Bash and check the status of your repository - You should see the file(s) you changed appear in red
 ```
 git status
 ```
-2. Stage the file using:
+2. Stage the file(s) using:
 ```
 git add -A
 ```
 3. Commit that staged file
 ```
-git commit -m "Hello World"
+git commit -m "Relevant comment to what I am doing"
 ```
 4. Push your changes up to your remote repository
 ```
 git push
 ```
-5. Head to your remote repository in [GitHub](http://www.github.com)
+5. Head to your remote repository in GitHub
 6. Click on `new pull request` button and name it using your name
 
 

@@ -23,17 +23,21 @@ public class Program
     
     public static void Main()
     {
+        char[] guess = new char[4];
+
         CreateBoard();
         DrawBoard();
-        char[] guess = new char[4];
         Console.WriteLine("Enter Guess:");
         guess = Console.ReadLine().ToCharArray();
-        return;
+
+        // leave this command at the end so your program does not close automatically
+        Console.ReadLine();
     }
     
     public static bool CheckSolution(char[] guess)
     {
         // Your code here
+
         return false;
     }
     
@@ -46,7 +50,6 @@ public class Program
     public static void InsertCode(char[] guess)
     {
         // Your code here
-        return;
     }
     
     public static void CreateBoard()
@@ -59,7 +62,6 @@ public class Program
                 board[i][j] = " ";
             }
         }
-        return;
     }
     
     public static void DrawBoard()
@@ -69,7 +71,6 @@ public class Program
             Console.WriteLine("|" + String.Join("|", board[i]));
         }
         
-        return;
     }
     
     public static void GenerateRandomCode() {
@@ -78,6 +79,5 @@ public class Program
         {
             solution[i] = letters[rnd.Next(0, letters.Length)];
         }
-        return;
     }
 }

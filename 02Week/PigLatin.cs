@@ -4,9 +4,9 @@ public class Program
 {
     public static void Main()
     {
-        Console.WriteLine("What's the word?");
-        string word = Console.ReadLine();
-        Console.WriteLine(TranslateWord(word));
+        // your code goes here
+
+        // leave this command at the end so your program does not close automatically
         Console.ReadLine();
     }
     

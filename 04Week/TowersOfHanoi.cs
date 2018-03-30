@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public class Program
+public class TowersOfHanoi
 {
     public static Dictionary<string, List<int>> stacks = new Dictionary<string, List<int>>()
     {
@@ -13,7 +13,7 @@ public class Program
     
     public static void Main()
     {
-        printStacks();
+        PrintStacks();
 
         // your code goes here
 

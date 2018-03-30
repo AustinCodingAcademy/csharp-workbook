@@ -1,6 +1,6 @@
 using System;
 
-public class Program
+public class Mastermind
 {
     // possible letters in code
     public static char[] letters = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' };

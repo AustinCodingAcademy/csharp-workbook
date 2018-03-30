@@ -1,6 +1,6 @@
 using System;
 
-public class Program
+public class RockPaperScissors
 {
     public static void Main()
     {
@@ -14,8 +14,9 @@ public class Program
         Console.ReadLine();
     }
     
-    public static void CompareHands(string hand1, string hand2)
+    public static string CompareHands(string hand1, string hand2)
     {
         // Your code here
+        return hand1 + ' ' + hand2;
     }
 }

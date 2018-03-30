@@ -1,6 +1,6 @@
 using System;
 
-public class Program
+public class Linq
 {
 	public static void Main()
 	{

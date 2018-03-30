@@ -1,6 +1,6 @@
 using System;
 
-public class Program
+public class PigLatin
 {
     public static void Main()
     {
@@ -13,5 +13,6 @@ public class Program
     public static string TranslateWord(string word)
     {
        // your code goes here
+       return word;
     }
 }

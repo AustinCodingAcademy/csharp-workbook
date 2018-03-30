@@ -1,6 +1,8 @@
 # Compiled source #
 ###################
 *.exe
+bin
+obj
 
 # OS generated files #
 ######################

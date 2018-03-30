@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public class Program
+public class Checkers
 {
     public static void Main()
     {

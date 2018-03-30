@@ -1,6 +1,6 @@
 using System;
 
-public class Program
+public class Timer
 {
 	public static void Main()
 	{

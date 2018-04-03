@@ -20,7 +20,8 @@
 ### Open Workbook in Visual Studio Code
 1. `cd` into your `csharp-workbook`
 1. Open your workbook in VSCode `code .`
-1. Open your integrated terminal by clicking `View` -> `Integrated Terminal` or pressing `control` + `\``
+1. The first time, you should be prompted to install the C# extension, click Install
+1. Open your integrated terminal by clicking `View` -> `Integrated Terminal` or pressing `control` + ``` ` ```
 
 ### Run and modify a project
 1. Navigate into your first project `cd ./01Week/HelloWorld`

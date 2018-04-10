@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Database
+namespace Checkpoint2
 {
     class Program
     {

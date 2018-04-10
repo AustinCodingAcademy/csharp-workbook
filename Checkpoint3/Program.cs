@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BlogPost
+namespace Checkpoint3
 {
     class Program
     {

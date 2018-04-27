@@ -5,22 +5,15 @@
    "version": "0.2.0",
    "configurations": [
         {
-            "name": "RockPaperScissors",
+            "name": "Run",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/RockPaperScissors/bin/Debug/netcoreapp2.0/RockPaperScissors.dll",
+            "program": "./bin/Debug/netcoreapp2.0/${fileBasenameNoExtension}.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/RockPaperScissors",
-            "console": "internalConsole",
+            "cwd": "${fileDirname}",
             "stopAtEntry": false,
-            "internalConsoleOptions": "openOnSessionStart"
-        },
-        {
-            "name": ".NET Core Attach",
-            "type": "coreclr",
-            "request": "attach",
-            "processId": "${command:pickProcess}"
+            "console": "integratedTerminal"
         }
-    ,]
+    ]
 }

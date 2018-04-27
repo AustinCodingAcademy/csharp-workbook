@@ -5,7 +5,7 @@
   "tasks": [
     {
       "label": "build",
-      "command": "dotnet build ${workspaceFolder}/RockPaperScissors/RockPaperScissors.csproj",
+      "command": "dotnet build ${fileDirname}/${fileBasenameNoExtension}.csproj",
       "type": "shell",
       "group": "build",
       "presentation": {

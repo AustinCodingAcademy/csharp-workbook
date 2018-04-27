@@ -5,7 +5,7 @@
   "tasks": [
     {
       "label": "build",
-      "command": "dotnet build ${fileDirname}/${fileBasenameNoExtension}.csproj",
+      "command": "dotnet build ./${fileBasenameNoExtension}/${fileBasenameNoExtension}.csproj",
       "type": "shell",
       "group": "build",
       "presentation": {

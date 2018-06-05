@@ -8,7 +8,6 @@ namespace Database{
     {
         static SqliteConnectionStringBuilder connectionStringBuilder = new SqliteConnectionStringBuilder();
         static List<Dictionary<string, string>> results = new List<Dictionary<string, string>>();
-        //Use DB in project directory.  If it does not exist, create it:
 
         static void Main(string[] args)
         {

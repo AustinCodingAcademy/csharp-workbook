@@ -1,30 +1,49 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.Data.Sqlite;
+using System.Linq;
 
 namespace Database{
     class Program
     {
+        static SqliteConnectionStringBuilder connectionStringBuilder = new SqliteConnectionStringBuilder();
+        static List<Dictionary<string, string>> results = new List<Dictionary<string, string>>();
+        //Use DB in project directory.  If it does not exist, create it:
+
         static void Main(string[] args)
         {
-            var connectionStringBuilder = new SqliteConnectionStringBuilder();
-
-            //Use DB in project directory.  If it does not exist, create it:
             connectionStringBuilder.DataSource = "./database.db";
+            SqliteDataReader reader = RunQuery(@"
+                SELECT * FROM items;
+            ");
+            PrintResults(reader);
+        }
 
+        static SqliteDataReader RunQuery(string query)
+        {
             using (var connection = new SqliteConnection(connectionStringBuilder.ConnectionString))
             {
                 connection.Open();
-
                 var selectCmd = connection.CreateCommand();
-                selectCmd.CommandText = "SELECT Name FROM artists";
-                using (var reader = selectCmd.ExecuteReader())
+                selectCmd.CommandText = query;
+                return selectCmd.ExecuteReader();
+            }
+        }
+
+        static void PrintResults(SqliteDataReader reader)
+        {
+            results.Clear();
+            var row = 0;
+            while (reader.Read()){
+                results.Add(new Dictionary<string, string>());
+                for (var column = 0; column < reader.FieldCount; column++)
                 {
-                    while (reader.Read())
-                    {
-                        var message = reader.GetString(0);
-                        Console.WriteLine(message);
-                    }
+                    results[row].Add(reader.GetName(column), reader.GetString(column));
                 }
+                var lines = results[row].Select(kvp => kvp.Key + ": " + kvp.Value.ToString());
+                Console.WriteLine(String.Join(Environment.NewLine, lines));
+                Console.WriteLine("");
+                row++;
             }
         }
     }

@@ -18,7 +18,6 @@ namespace TicTacToe
             {
                 DrawBoard();
                 GetInput();
-
             } while (!CheckForWin() && !CheckForTie());
 
             // leave this command at the end so your program does not close automatically
@@ -32,11 +31,13 @@ namespace TicTacToe
             int row = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter Column:");
             int column = int.Parse(Console.ReadLine());
+            PlaceMark(row, column);
         }
 
         public static void PlaceMark(int row, int column)
         {
-        // your code goes here
+            // your code goes here
+            board[row][column] = "h";
         }
 
         public static bool CheckForWin()

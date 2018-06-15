@@ -5,9 +5,4 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="RazorEngine" Version="3.10.0" />
-    <PackageReference Include="System.Data.SQLite" Version="1.0.108.0" />
-  </ItemGroup>
-
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Checkpoint2
+namespace Rainforest
 {
     class Program
     {
